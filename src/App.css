@@ -19,7 +19,7 @@ header {
 }
 
 body {
-  background-image: url("/assets/trees.jpg");
+  background-image: url("./trees.jpg");
   background-repeat: no-repeat;
   background-size: auto;
 }
