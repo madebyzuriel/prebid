@@ -1,24 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
+import { AdvertisingProvider, AdvertisingSlot } from 'react-advertising'
 import './App.css';
+
+
+const config = {
+  slots: [
+    {
+      id: "adslot",
+      path: "/19968336/header-bid-tag-0",
+      sizes: [[300, 250]],
+      prebid: [
+        {
+          mediaTypes: {
+            banner: {
+              sizes: [[300, 250]]
+            }
+          },
+          bids: [
+            {
+              bidder: "appnexus",
+              params: {
+                placementId: 19859281
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="home">
+      <header>
+        <a id="xany">a xany product</a>
+        <img className="logo" src="/tree.svg" />
+        <img className="nav-icon" src="/dropdown.png" />
       </header>
+      <div className="home-title">Save Trees</div>
+      <div className="buttons">
+        <button className="btn">Checkout what we're doing</button>
+        <button className="btn">See how you can help</button>
+      </div>
+      <div className="slot">
+        <AdvertisingProvider config={config}>
+          <AdvertisingSlot id="adslot" />
+        </AdvertisingProvider>
+      </div>
+      <div className="footer"></div>
     </div>
   );
 }

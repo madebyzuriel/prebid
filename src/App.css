@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+
+
+.logo {
+  max-height: 12vh;
+  float: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#xany {
+  color: white
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  color: black;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+body {
+  background-image: url("/trees.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.home-title {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 2.5rem;
+  color: white;
+  margin-left: 4.5rem;
+  font-size: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 12rem;
+  margin-left: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 3.5em;
+  border: 0.16em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: full-width;
+  text-align: center;
+  font-weight: 500;
+  /* color: #FFFFFF */
+}
+
+
+.nav-icon {
+  max-height: 6vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slot {
+  margin-top: 5rem;
+  margin-left: 3rem;
 }
