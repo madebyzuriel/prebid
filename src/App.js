@@ -35,8 +35,8 @@ function App() {
     <div className="home">
       <header>
         <a id="xany">a xany product</a>
-        <img className="logo" src="./assets/tree.svg" />
-        <img className="nav-icon" src="./assets/dropdown.png" />
+        <img className="logo" src="/prebid/tree.svg" />
+        <img className="nav-icon" src="/prebid/dropdown.png" />
       </header>
       <div className="home-title">Save Trees</div>
       <div className="buttons">
